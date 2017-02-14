@@ -18,11 +18,12 @@
     this.left = left;
     this.timeBetween = timeBetweenSteps;
     this.$node = $('<span class = "dancer"></span>');
+    this.step();
   };
 
 
   Dancer.prototype.step = function() {
-    setTimeout(this.step, timeBetweenSteps);
+    setTimeout(this.step, this.timeBetweenSteps);
   };
 
 
@@ -33,9 +34,10 @@
     };
     this.$node.css(styleSettings);
   };
-  console.log(this);
-  Dancer.step();
-  this.setPosition(top, left);
+  // console.log(this);
+  // var dancer = new Dancer;
+  // dancer.step();
+  // dancer.setPosition(this.top, this.left);
 
 
 
