@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url("pics/nuclear-explosion.jpg");
+  background-size: 100% 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -21,7 +22,17 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  content: url("pics/trumpy.png");
   position:absolute;
+}
+
+.flyingPig{
+  content: url("pics/FlyingPig.png");
+  height: 5%;
+  width: 5%;
+
+}
+
+.gangnamStyle{
+  content: url("pics/psy.png");
 }
