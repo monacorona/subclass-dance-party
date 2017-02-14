@@ -1,6 +1,7 @@
 var FlyingPig = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('flyingPig');
+  dancers.push(this);
 
 };
 

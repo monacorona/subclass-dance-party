@@ -18,3 +18,19 @@
     };
     this.$node.css(styleSettings);
   };
+
+
+//lines up all the elements on the page
+  // Dancer.prototype.lineup = function(){
+  //
+  //   var styleSettings = {
+  //     left: 0;
+  //   };
+  //   this.$node.css(styleSettings);
+  // }
+
+  //breaks up line up
+  // Dancer.prototype.breakLine = function() {
+  //   this.setPosition($('body').height * Math.random(), $('body').width * Math.random());
+  //   this.$node.css(styleSettings);
+  // }

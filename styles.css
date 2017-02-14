@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+
 body, html{
   height:100%;
 }
@@ -5,7 +7,7 @@ body{
   margin: 0px;
   background-image: url("pics/nuclear-explosion.jpg");
   background-size: 100% 100%;
-  font-size: 18px;
+  font-size: 20px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -16,10 +18,26 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background: linear-gradient(to right top, yellow, red);
+  text-transform: uppercase;
+  font-family: Barrio;
+}
+.topbar a{
+  text-decoration: none;
+  color: mediumaquamarine;
+}
+
+.topbar a:hover{
+  font-size: 1.2em;
+  transition: ease 0.2s;
+  color: cyan;
+}
+
+.topbar .actionButton{
+  color: red;
 }
 .title{
-  background-color: #777;
+  background: linear-gradient(to left top, cyan, lightseagreen);
 }
 .dancer{
   content: url("pics/trumpy.png");
@@ -28,9 +46,8 @@ body, a:link, a:visited, a:active{
 
 .flyingPig{
   content: url("pics/FlyingPig.png");
-  height: 5%;
-  width: 5%;
-
+  height: 8%;
+  width: 8%;
 }
 
 .gangnamStyle{
