@@ -41,9 +41,11 @@
     });
   };
 
+  var newAngle = 0;
+
   Dancer.prototype.rotate = function() {
     //declare new variables
-    var newAngle = 10;
+   // var newAngle = 10;
 
     //access all items in the global array
   
@@ -59,6 +61,9 @@
     //  setInterval(twist, 100);
   };
 
+  Dancer.prototype.scatter = function(){
+
+  };
 
   //breaks up line up
   // Dancer.prototype.breakLine = function() {

@@ -31,12 +31,12 @@ $(document).ready(function() {
   });
 
   $('#lineUpButton').on('click', function(event) {
-    for (var i = 0; i < dancers.length; i++) {
-      dancers[i].lineup();
-    }
-      // dancers.forEach(function(dancer){
-      //   dancer.lineup();
-      // })
+    // for (var i = 0; i < dancers.length; i++) {
+    //   dancers[i].lineup();
+    // }
+    dancers.forEach(function(dancer) {
+      dancer.lineup();
+    });
   });
 });
 
