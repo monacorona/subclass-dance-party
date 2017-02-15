@@ -21,42 +21,43 @@
 
 
 //lines up all the elements on the page
-  Dancer.prototype.lineup = function(){
+  Dancer.prototype.lineup = function() {
   //declare new variables
-  var topPosition;
+    var topPosition;
 
-  //access all the items in the global array
-  dancers.forEach(function(dancer){
-    //look up and find index of current item using ===
-    var dancerIndex = dancers.indexOf(dancer);
-    // once found use index * px(constant) -> 3*10px for top and const left
-    topPosition = dancerIndex * 50;
+    //access all the items in the global array
+    dancers.forEach(function(dancer) {
+      //look up and find index of current item using ===
+      var dancerIndex = dancers.indexOf(dancer);
+      // once found use index * px(constant) -> 3*10px for top and const left
+      topPosition = dancerIndex * 50;
 
       var styleSettings = {
         left: 50,
         top: topPosition
       };
-    dancer.$node.css(styleSettings);
-    })
-  }
 
-  Dancer.prototype.rotate = function(){
+      dancer.$node.css(styleSettings);
+    });
+  };
+
+  Dancer.prototype.rotate = function() {
     //declare new variables
-    var newAngle;
+    var newAngle = 10;
 
     //access all items in the global array
-    debugger;
-      dancers.forEach(function(dancer){
-        //declare styleSetting var for css rotate property
-        var styleSettings = {
-          'transform': 'rotate(90deg)'
-        }
-        //apply styleSetting to each dancer
-        dancer.$node.css(styleSettings);
-      })
+  
+    dancers.forEach(function(dancer) {
+      //declare styleSetting var for css rotate property
+      var styleSettings = {
+        'transform': 'rotate(' + newAngle++ + 'deg)'
+      };
+      //apply styleSetting to each dancer
+      dancer.$node.css(styleSettings);
+    });
 
     //  setInterval(twist, 100);
-  }
+  };
 
 
   //breaks up line up
