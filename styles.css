@@ -7,7 +7,7 @@ body{
   margin: 0px;
   background-image: url("pics/nuclear-explosion.jpg");
   background-size: 100% 100%;
-  font-size: 20px;
+  font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -25,6 +25,10 @@ body, a:link, a:visited, a:active{
 .topbar a{
   text-decoration: none;
   color: mediumaquamarine;
+}
+.topbar .actionButton{
+  padding:5px 12px;
+
 }
 
 .topbar a:hover{
@@ -52,4 +56,5 @@ body, a:link, a:visited, a:active{
 
 .gangnamStyle{
   content: url("pics/psy.png");
+  transform: rotate(90deg);
 }

@@ -29,5 +29,21 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
-});
 
+  $('#lineUpButton').on('click', function(event){
+    for(var i = 0; i<dancers.length; i++){
+      dancers[i].lineup();
+      }
+      // dancers.forEach(function(dancer){
+      //   dancer.lineup();
+      // })
+    })
+  });
+
+  $('#rotateButton').on('click', function(event){
+    setInterval(function(){
+      dancers.forEach(function(dancer){
+        dancer.rotate();
+      })
+    }, 100);
+  })
